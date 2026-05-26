@@ -9,4 +9,6 @@ import java.util.Optional;
 @Repository
 public interface ProduitRepository extends JpaRepository<Produit, Long> {
     Optional<Produit> findByProduitDuJourTrue();
+
+    Optional<Produit> findByLibelle(String libelle);
 }
